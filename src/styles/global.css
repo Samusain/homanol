@@ -166,13 +166,105 @@ p {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 6vw, 4rem);
+  }
+
+  h2 {
+    font-size: clamp(1.3rem, 5vw, 2rem);
+  }
+
+  h3 {
+    font-size: clamp(0.7rem, 3vw, 1.2rem);
+  }
+
+  .btn {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
   .section {
     padding: 3rem 0;
   }
-  
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+
+  h3 {
+    font-size: clamp(0.6rem, 2.5vw, 1rem);
+  }
+
   .btn {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.25rem;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  h3 {
+    font-size: clamp(0.5rem, 2vw, 0.9rem);
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
   }
 }

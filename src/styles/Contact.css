@@ -77,3 +77,48 @@ input:active {
 .checkbox-box > input {
     background: transparent;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+
+    .touch {
+        font-size: 0.7rem;
+        padding-left: 0.3rem;
+    }
+
+    .contact-form {
+        gap: 0.6rem;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .input-box > input {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    .form-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .input-box > input {
+        width: 100%;
+        max-width: 15rem;
+    }
+
+    .form-btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
