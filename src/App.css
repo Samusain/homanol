@@ -76,8 +76,9 @@ body {
   line-height: 1.6;
   font-weight: 400;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-content: center;
+  /* flex-direction: column; */
   overflow-x: hidden;
 }
 
@@ -220,7 +221,7 @@ p, li, span, a {
 
 /* ===== Layout Utilities ===== */
 .container {
-  width: 92%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
@@ -469,7 +470,7 @@ p, li, span, a {
   background-attachment: fixed;
   display: flex;
   align-items: center;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-xl);
   position: relative;
   overflow: hidden;
 }
@@ -555,7 +556,7 @@ p, li, span, a {
   align-items: center;
   justify-content: center;
   gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-md);
   min-height: 56px;
   min-width: 160px;
   border: none;
@@ -713,15 +714,18 @@ p, li, span, a {
 
 /* ===== Services Section ===== */
 .services-list {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: var(--spacing-md);
+  width: 100%;
   margin-top: var(--spacing-lg);
 }
 
 .service-item {
+  width: 100%;
   background: var(--white);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-sm);
   border-radius: var(--border-radius);
   border-left: 4px solid var(--primary-red);
   box-shadow: var(--shadow-light);
@@ -1112,6 +1116,7 @@ p, li, span, a {
 
 .direction-buttons {
   display: flex;
+  flex-direction: column;
   gap: var(--spacing-sm);
   margin-top: var(--spacing-md);
 }
@@ -1247,6 +1252,10 @@ p, li, span, a {
   align-items: flex-start;
   color: var(--gray-light);
   line-height: 1.5;
+}
+
+.footer__contact li span {
+  color: var(--gray-light);
 }
 
 .footer__contact svg {
@@ -1397,6 +1406,7 @@ p, li, span, a {
   grid-template-columns: 1fr;
   gap: var(--spacing-xs);
   margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
 }
 
 .feature {
@@ -1554,7 +1564,7 @@ p, li, span, a {
 .emergency-card {
   background: linear-gradient(135deg, var(--danger) 0%, #e60000 100%);
   color: var(--white);
-  padding: var(--spacing-xl);
+  padding: 1rem;
   border-radius: var(--border-radius-lg);
   text-align: center;
   box-shadow: var(--shadow-heavy);
@@ -1591,6 +1601,7 @@ p, li, span, a {
 }
 
 .emergency-steps li {
+  text-align: start;
   margin-bottom: var(--spacing-sm);
   padding-left: var(--spacing-sm);
   color: var(--dark-text);
@@ -1604,7 +1615,7 @@ p, li, span, a {
 }
 
 .emergency-phone {
-  color: var(--white);
+  color: var(--gray-dark);
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
@@ -1694,6 +1705,7 @@ p, li, span, a {
 }
 
 .safety-features .feature {
+  text-align: start;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1911,7 +1923,7 @@ p, li, span, a {
 }
 
 .map__embed {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
 }
 
 .direction-info {
